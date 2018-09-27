@@ -14,12 +14,7 @@ import argparse
 repos = 100
 lastpage = 50
 repo_counter = 0
-# User to input the organization name
-'''orgname = raw_input("Introduce your organization's name: (Case sensitive) \n")
-if len(orgname) == 0 :
-	print "Error: This is not a Github organization name.\n"
-	exit()
-'''
+# User to pass the organization name as argument when running the script.
 parser = argparse.ArgumentParser(description='Introducing the Github organization name')
 parser.add_argument('--org', nargs=1,  help='Introduce your Github organizations name')
 args = parser.parse_args()
